@@ -327,8 +327,8 @@
             ],
             "properties": {
                 "sku": {
-                    "name": "Standard_Small",
-                    "tier": "Standard",
+                    "name": "Standard_v2",
+                    "tier": "Standard_v2",
                     "capacity": 2
                 },
                 "gatewayIPConfigurations": [
