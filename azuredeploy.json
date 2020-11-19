@@ -418,7 +418,29 @@
                     }
                 ]
             }
-        }        
+        },
+        {
+            "name": "bastion",
+            "type": "Microsoft.Network/bastionHosts",
+            "apiVersion": "2020-06-01",
+            "location": "[parameters('location')]",
+            "tags": {},
+            "properties": {
+                "ipConfigurations": [
+                {
+                    "properties": {
+                    "subnet": {
+                        "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', 'appgw_vnet', 'AzureBastionSubnet')]"
+                    },
+                    "publicIPAddress": {
+                        "id": "[resourceId('Microsoft.Network/publicIPAddresses', 'bastion_pub_ip')]"
+                    },
+                    "privateIPAllocationMethod": "string"
+                    }
+                }
+            ]
+        }     
+    }
     ]
 }
 
