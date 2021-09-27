@@ -1,4 +1,4 @@
-# **101-appgw-demo**
+# **Application Gateway demo**
 
  Application Gateway v2 deployment with VMs in single backend pool and basic routing.
 
